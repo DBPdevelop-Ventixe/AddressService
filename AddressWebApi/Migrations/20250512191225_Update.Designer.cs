@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AddressWebApi.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20250510185003_Init")]
-    partial class Init
+    [Migration("20250512191225_Update")]
+    partial class Update
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
