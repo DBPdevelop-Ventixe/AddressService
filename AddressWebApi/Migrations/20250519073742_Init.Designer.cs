@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AddressWebApi.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20250515100221_AddedState")]
-    partial class AddedState
+    [Migration("20250519073742_Init")]
+    partial class Init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -52,6 +52,17 @@ namespace AddressWebApi.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Addresses");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "1",
+                            City = "Miami",
+                            Country = "USA",
+                            State = "FL",
+                            Street = "123 Sunset St",
+                            ZipCode = "4153"
+                        });
                 });
 #pragma warning restore 612, 618
         }

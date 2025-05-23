@@ -20,6 +20,7 @@ app.UseCors(x => x
 
 app.MapOpenApi();
 app.UseHttpsRedirection();
+app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
 
