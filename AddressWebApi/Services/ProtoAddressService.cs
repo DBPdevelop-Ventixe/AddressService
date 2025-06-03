@@ -21,7 +21,8 @@ public class ProtoAddressService(DataContext context) : AddressHandler.AddressHa
             Street = address.Street,
             City = address.City,
             State = address.State,
-            ZipCode = address.ZipCode
+            ZipCode = address.ZipCode,
+            Country = address.Country
         };
 
         return reply;
